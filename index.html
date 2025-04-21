@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Strayapay</title>
+    <link rel="shortcut icon" href="Stra_Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <button class="dark-toggle" onclick="toggleDarkMode()">
+        <span id="theme-icon">🌙</span>
+    </button>
+    <header>
+        <div class="headerup"></div>
+        <div class="headerleft">
+            <div class="headertop">
+                <div class="nav">
+                    <div class="logo">Strayapay.</div>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        ☰
+                    </div>
+                    <ul class="nav-items" id="nav-menu">
+                        <li>Overview</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <div class="navside"><div class="navside-in"></div></div>
+            </div>
+            <div class="headerbottom">
+                <div class="navbottom"></div>
+            </div>
+        </div>
+        <div class="headerright"><div class="headerright-in"></div></div>
+    </header> 
+    
+    <div class="landing">
+        <img class="aus-bg" src="https://www.in-formality.com/wiki/images/9/98/Australia_map.png" alt="">
+        <div class="landingmain">
+            <div class="landingleft">
+                <h1>Australia’s <span>Zero-Surcharge,</span> Instant Payment Layer</h1>
+                <p>Make everyday payments <span id="element"></span> — just the way they should be.</p>
+                <button class="button1">Join the waitlist</button>
+                <button class="button2">Know more</button>
+            </div>
+            <div class="landingright">
+                <div class="qr_placeholder">
+                    <div class="color-border">
+                        <img src="qr_place.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"><div class="line-in"></div></div>
+
+
+    
+    <div class="middle">
+        <div class="middleleft">
+            <div>
+                <button>&lt; For the customers &gt;</button>
+            </div>
+        </div>
+        <div class="middleright">
+            <div>
+                <button>&lt; For the merchants &gt;</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="prefooter"><div class="prefooter-in"></div></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col footer-logo-img">
+                    <img src="Stra_Logo.jpg" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-logo">Strayapay</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">overview</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Let's connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "simple",
+                "fast",
+                "fee-free"
+            ],
+            typeSpeed: 75,loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+</body>
+</html>
